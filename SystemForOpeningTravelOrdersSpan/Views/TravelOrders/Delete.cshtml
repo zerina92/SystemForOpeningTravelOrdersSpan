@@ -1,0 +1,152 @@
+﻿@model SystemForOpeningTravelOrdersSpan.Models.TravelOrder
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TravelOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.from)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.from)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.to)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.to)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfStartTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateOfStartTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfEndTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateOfEndTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.travelVehicle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travelVehicle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reasonForTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reasonForTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.relationOfTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.relationOfTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.projectNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.projectNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accommodation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accommodation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accomodationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accomodationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accomodationArrivalDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accomodationArrivalDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accomodationDepartureDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accomodationDepartureDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comment)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,123 @@
+﻿@model IEnumerable<SystemForOpeningTravelOrdersSpan.Models.TravelOrder>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.from)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.to)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateOfStartTravel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateOfEndTravel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.travelVehicle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.reasonForTravel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.relationOfTravel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.projectNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accommodation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accomodationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accomodationArrivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accomodationDepartureDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comment)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.from)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.to)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateOfStartTravel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateOfEndTravel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.travelVehicle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.reasonForTravel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.relationOfTravel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.projectNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accommodation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accomodationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accomodationArrivalDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accomodationDepartureDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comment)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,146 @@
+﻿@model SystemForOpeningTravelOrdersSpan.Models.TravelOrder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TravelOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.from)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.from)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.to)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.to)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfStartTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateOfStartTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfEndTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateOfEndTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.travelVehicle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.travelVehicle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reasonForTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reasonForTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.relationOfTravel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.relationOfTravel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.projectNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.projectNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accommodation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accommodation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accomodationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accomodationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accomodationArrivalDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accomodationArrivalDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accomodationDepartureDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accomodationDepartureDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comment)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
